@@ -12,7 +12,7 @@
 	<body <?php body_class(); ?>>
 
 	<nav class="navbar navbar-expand-md navbar-dark  bg-dark">
-		<a class="navbar-brand" href="#">Navbar</a>
+		<a class="navbar-brand" href="#">WordPress No-Instructor</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
@@ -20,10 +20,10 @@
 		<div class="collapse navbar-collapse" id="navbarsExampleDefault">
 		<ul class="navbar-nav mr-auto">
 			<li class="nav-item active">
-				<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+				<a class="nav-link" href="<?php echo home_url(); ?>">Home <span class="sr-only">(current)</span></a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="#">Link</a>
+				<a class="nav-link" href="/posts.php">Posts</a>
 			</li>
 			<li class="nav-item">
 				<a class="nav-link disabled" href="#">Disabled</a>
@@ -37,9 +37,9 @@
 			</div>
 			</li>
 		</ul>
-		<form class="form-inline my-2 my-lg-0">
-			<input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-			<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+		<form class="form-inline my-2 my-lg-0" action="<?php echo home_url(); ?>" role="search">
+			<input class="form-control mr-sm-2" type="text" placeholder="<?php _e( 'To search, type and hit enter.', 'html5blank' ); ?>" aria-label="Search">
+			<button class="btn btn-outline-success my-2 my-sm-0" type="submit" role="button"><?php _e( 'Search', 'html5blank' ); ?></button>
 		</form>
 		</div>
 	</nav>
