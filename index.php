@@ -13,9 +13,9 @@
     <div class="container">
       <!-- Example row of columns -->
 
-        <div class="container">
-          <?php get_template_part('loop'); ?>
-        </div>
+  			<?php get_template_part('loop'); ?>
+
+
 
       <div class="row">
         <div class="col-md-4">

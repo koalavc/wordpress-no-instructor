@@ -12,7 +12,7 @@
 	<body <?php body_class(); ?>>
 
 	<nav class="navbar navbar-expand-md navbar-dark  bg-dark">
-		<a class="navbar-brand" href="#">WordPress No-Instructor</a>
+		<a class="navbar-brand" href="<?php echo home_url(); ?>">WordPress No-Instructor</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
@@ -20,10 +20,13 @@
 		<div class="collapse navbar-collapse" id="navbarsExampleDefault">
 		<ul class="navbar-nav mr-auto">
 			<li class="nav-item active">
-				<a class="nav-link" href="<?php echo home_url(); ?>">Home <span class="sr-only">(current)</span></a>
+				<a class="nav-link" >Home <span class="sr-only">(current)</span></a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="/posts.php">Posts</a>
+				<a class="nav-link" href="/posts">Posts</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="/archives">archives</a>
 			</li>
 			<li class="nav-item">
 				<a class="nav-link disabled" href="#">Disabled</a>
