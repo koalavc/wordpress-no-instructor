@@ -19,18 +19,19 @@
     <!--// echo and var_dump are different
             // $posts=get_posts(); var_dump($posts) -->
 
-            <?php foreach ($posts=get_posts() as $post): ?> 
-                
-                <div class="card mb-2">
-                    <div class="card-header">
-                        <a href="<?php echo $post->post_title; ?>"><?php echo $post->post_title ?></a>
-                    </div>
-                    <div class="card-body">
-                        <p>Author: <?php echo getUsername($post->post_author, $allUsers); ?></p>
-                        <p>Published: <?php echo $post->post_date?></p>
-                    </div>
+
+        <?php foreach ($posts=get_posts() as $post): ?> 
+            
+            <div class="card mb-2">
+                <div class="card-header">
+                    <a href="<?php echo $post->post_name; ?>"><?php echo $post->post_title ?></a>
                 </div>
-            <?php endforeach; ?>
+                <div class="card-body">
+                    <p>Author: <?php echo getUsername($post->post_author, $allUsers); ?></p>
+                    <p>Published: <?php echo $post->post_date?></p>
+                </div>
+            </div>
+        <?php endforeach; ?>
     </div>
     
 <?php get_footer(); ?>
