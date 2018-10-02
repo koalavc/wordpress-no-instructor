@@ -21,9 +21,15 @@
 
             <?php foreach ($posts=get_posts() as $post): ?> 
                 
-                <a href="page-<?php echo $post->post_title; ?>"><?php echo $post->post_title ?></a>
-                <p>Author: <?php echo getUsername($post->post_author, $allUsers); ?></p>
-                <p>Published: <?php echo $post->post_date?></p>
+                <div class="card mb-2">
+                    <div class="card-header">
+                        <a href="<?php echo $post->post_title; ?>"><?php echo $post->post_title ?></a>
+                    </div>
+                    <div class="card-body">
+                        <p>Author: <?php echo getUsername($post->post_author, $allUsers); ?></p>
+                        <p>Published: <?php echo $post->post_date?></p>
+                    </div>
+                </div>
             <?php endforeach; ?>
     </div>
     
