@@ -40,9 +40,6 @@
 			</div>
 			</li>
 		</ul>
-		<form class="form-inline my-2 my-lg-0" action="<?php echo home_url(); ?>" role="search">
-			<input class="form-control mr-sm-2" type="text" placeholder="<?php _e( 'To search, type and hit enter.', 'html5blank' ); ?>" aria-label="Search">
-			<button class="btn btn-outline-success my-2 my-sm-0" type="submit" role="button"><?php _e( 'Search', 'html5blank' ); ?></button>
-		</form>
+		
 		</div>
 	</nav>
