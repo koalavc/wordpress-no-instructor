@@ -19,7 +19,6 @@
     <!--// echo and var_dump are different
             // $posts=get_posts(); var_dump($posts) -->
 
-
         <?php foreach ($posts=get_posts() as $post): ?> 
             
             <div class="card mb-2">

@@ -31,6 +31,9 @@
 			<li class="nav-item">
 				<a class="nav-link" href="/sample-page">sample page</a>
 			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="/giphysearch">giphy page</a>
+			</li>
 			<li class="nav-item dropdown">
 			<a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
 			<div class="dropdown-menu" aria-labelledby="dropdown01">
